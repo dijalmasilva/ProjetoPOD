@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProjetoFinalAppData/ProjetoFinalAppData.iml" filepath="$PROJECT_DIR$/ProjetoFinalAppData/ProjetoFinalAppData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoFinalChatClient/ProjetoFinalChatClient.iml" filepath="$PROJECT_DIR$/ProjetoFinalChatClient/ProjetoFinalChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoFinalPod.iml" filepath="$PROJECT_DIR$/ProjetoFinalPod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoFinalServer/ProjetoFinalServer.iml" filepath="$PROJECT_DIR$/ProjetoFinalServer/ProjetoFinalServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoFinalShared/ProjetoFinalShared.iml" filepath="$PROJECT_DIR$/ProjetoFinalShared/ProjetoFinalShared.iml" />
+    </modules>
+  </component>
+</project>
