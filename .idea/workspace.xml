@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ad966bb-dd49-44d0-be44-ae0f3448103e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__br_com_dijalmasilva_projetofinalshared_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/ProjetoFinalAppData.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/ProjetoFinalChatClient.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Client.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/TaskManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalPod.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/ProjetoFinalServer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ChannelRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ServerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/ProjetoFinalShared.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Channel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IClientObserver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-    </list>
+    <list default="true" id="3ad966bb-dd49-44d0-be44-ae0f3448103e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ProjetoFinalShared/target/" />
@@ -85,7 +43,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="196">
               <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
@@ -921,16 +879,15 @@
       <workItem from="1494760748589" duration="95000" />
       <workItem from="1494848544949" duration="3306000" />
       <workItem from="1494873083121" duration="1651000" />
-      <workItem from="1494874773945" duration="5825000" />
+      <workItem from="1494874773945" duration="6093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21794000" />
+    <option name="totallyTimeSpent" value="22062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -940,9 +897,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1349,7 +1306,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="196">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding />
         </state>
