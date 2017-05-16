@@ -1,4 +1,4 @@
-package ifpb.pod;
+package ifpb.pod.chatclient;
 
 import ifpb.edu.br.pod.Client;
 

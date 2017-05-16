@@ -16,4 +16,6 @@ public interface IServer extends Remote {
     boolean registerInChannel(Client clientObserver, int idChannel) throws RemoteException;
 
     List<Channel> listChannels() throws RemoteException;
+
+    MessageResult processMessageReceive(Message message) throws RemoteException;
 }

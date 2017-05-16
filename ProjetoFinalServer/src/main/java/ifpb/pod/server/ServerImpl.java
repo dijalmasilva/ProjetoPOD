@@ -1,11 +1,12 @@
-package ifpb.pod;
+package ifpb.pod.server;
 
-import ifpb.edu.br.pod.Channel;
-import ifpb.edu.br.pod.Client;
-import ifpb.edu.br.pod.IServer;
+import ifpb.edu.br.pod.*;
 
+import java.math.BigInteger;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -65,5 +66,25 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
     @Override
     public List<Channel> listChannels() throws RemoteException {
         return channelRepository.getChannels();
+    }
+
+    @Override
+    public MessageResult processMessageReceive(Message msg) throws RemoteException {
+        //
+        MessageDigest msd;
+        try {
+            msd = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            throw new RemoteException("Erro de MD5", e);
+        }
+        //
+        byte[] bhash = msd.digest(msg.getText().getBytes());
+        BigInteger bi = new BigInteger(bhash);
+        //
+        MessageResult result = new MessageResult(msg.getId(), bi.toString(16));
+        //
+        System.out.println(msg.getId() + " " + msg.getText());
+        //
+        return result;
     }
 }

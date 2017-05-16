@@ -1,4 +1,4 @@
-package ifpb.pod;
+package ifpb.pod.server;
 
 import ifpb.edu.br.pod.Channel;
 

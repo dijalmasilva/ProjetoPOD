@@ -1,4 +1,4 @@
-package ifpb.pod;
+package ifpb.pod.server;
 
 import ifpb.edu.br.pod.IServer;
 
@@ -15,9 +15,9 @@ public class Main {
 
     public static void main(String[] args) throws RemoteException, AlreadyBoundException, MalformedURLException {
 
-        IServer register = new ServerImpl();
+        IServer server = new ServerImpl();
         Registry registry = LocateRegistry.createRegistry(1099);
-        registry.bind("Register", register);
+        registry.bind("Server", server);
         System.out.println("Servidor iniciado!");
     }
 }

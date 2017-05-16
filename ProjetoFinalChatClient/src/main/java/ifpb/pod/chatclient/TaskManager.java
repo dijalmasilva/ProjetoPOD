@@ -1,4 +1,4 @@
-package ifpb.pod;
+package ifpb.pod.chatclient;
 
 import ifpb.edu.br.pod.Channel;
 import ifpb.edu.br.pod.Client;
@@ -19,7 +19,7 @@ public class TaskManager {
 
     TaskManager() throws RemoteException, NotBoundException {
         Registry registry = LocateRegistry.getRegistry(1099);
-        server = (IServer) registry.lookup("Register");
+        server = (IServer) registry.lookup("Server");
     }
 
     boolean registerClient(Client clientObserver) {
