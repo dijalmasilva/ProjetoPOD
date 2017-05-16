@@ -34,4 +34,15 @@ public class ChannelRepository {
     public int getNextId() {
         return ++idGenerated;
     }
+
+    public Channel findChannelById(int id) {
+
+        for (Channel c : channels) {
+            if (c.getId() == id) {
+                return c;
+            }
+        }
+
+        return null;
+    }
 }

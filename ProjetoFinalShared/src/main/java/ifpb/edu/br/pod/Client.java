@@ -1,23 +1,20 @@
-package ifpb.pod;
+package ifpb.edu.br.pod;
 
-import ifpb.edu.br.pod.IClientObserver;
-
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
+import java.io.Serializable;
 
 /**
  * Created by <a href="http://dijalmasilva.github.io" target="_blank">dijalma</a> on 13/05/17.
  */
-public class Client extends UnicastRemoteObject implements IClientObserver {
+public class Client implements Serializable {
 
     private String name;
     private String email;
     private boolean connected = false;
 
-    public Client() throws RemoteException {
+    public Client() {
     }
 
-    public Client(String name, String email) throws RemoteException {
+    public Client(String name, String email) {
         this.name = name;
         this.email = email;
     }
@@ -46,28 +43,23 @@ public class Client extends UnicastRemoteObject implements IClientObserver {
         this.connected = connected;
     }
 
-    @Override
-    public void login() throws RemoteException {
+    public void login() {
         this.connected = true;
     }
 
-    @Override
-    public void logout() throws RemoteException {
+    public void logout() {
         this.connected = false;
     }
 
-    @Override
-    public void showNotify(String s) throws RemoteException {
+    public void showNotify(String s) {
         System.out.println(s);
     }
 
-    @Override
-    public String printClient() throws RemoteException {
+    public String printClient() {
         return "Client{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", connected=" + connected +
                 '}';
     }
-
 }

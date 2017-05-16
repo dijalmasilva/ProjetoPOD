@@ -18,6 +18,6 @@ public class Main {
         IServer register = new ServerImpl();
         Registry registry = LocateRegistry.createRegistry(1099);
         registry.bind("Register", register);
-        System.out.println("Registro iniciado...");
+        System.out.println("Servidor iniciado!");
     }
 }

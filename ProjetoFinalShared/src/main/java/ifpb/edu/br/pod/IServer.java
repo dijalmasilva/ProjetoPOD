@@ -9,9 +9,11 @@ import java.util.List;
  */
 public interface IServer extends Remote {
 
-    boolean addObserver(IClientObserver clientObserver) throws RemoteException;
+    boolean addObserver(Client clientObserver) throws RemoteException;
 
-    boolean registerChannel(String nameChannel) throws RemoteException;
+    boolean registerChannel(Client clientObserver, String nameChannel) throws RemoteException;
+
+    boolean registerInChannel(Client clientObserver, int idChannel) throws RemoteException;
 
     List<Channel> listChannels() throws RemoteException;
 }

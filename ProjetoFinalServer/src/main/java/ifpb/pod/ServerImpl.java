@@ -1,7 +1,7 @@
 package ifpb.pod;
 
 import ifpb.edu.br.pod.Channel;
-import ifpb.edu.br.pod.IClientObserver;
+import ifpb.edu.br.pod.Client;
 import ifpb.edu.br.pod.IServer;
 
 import java.rmi.RemoteException;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class ServerImpl extends UnicastRemoteObject implements IServer {
 
-    private List<IClientObserver> clientObservers;
+    private List<Client> clientObservers;
     private ChannelRepository channelRepository;
 
     ServerImpl() throws RemoteException {
@@ -23,7 +23,7 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
     }
 
     @Override
-    public boolean addObserver(IClientObserver clientObserver) throws RemoteException {
+    public boolean addObserver(Client clientObserver) throws RemoteException {
         try {
             System.out.println("Adicionando cliente observer: " + clientObserver.printClient());
             this.clientObservers.add(clientObserver);
@@ -36,10 +36,11 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
     }
 
     @Override
-    public boolean registerChannel(String nameChannel) throws RemoteException {
+    public boolean registerChannel(Client clientObserver, String nameChannel) throws RemoteException {
         try {
             System.out.println("Criando novo grupo:" + nameChannel);
             Channel channel = new Channel(channelRepository.getNextId(), nameChannel);
+            channel.addNewSubscriber(clientObserver);
             channelRepository.addChannel(channel);
             return true;
         } catch (Exception e) {
@@ -47,6 +48,18 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
         }
 
         return false;
+    }
+
+    @Override
+    public boolean registerInChannel(Client clientObserver, int idChannel) throws RemoteException {
+        Channel channelById = channelRepository.findChannelById(idChannel);
+        if (channelById == null) {
+            System.out.println("Grupo não existe!");
+            return false;
+        } else {
+            channelById.addNewSubscriber(clientObserver);
+            return true;
+        }
     }
 
     @Override
