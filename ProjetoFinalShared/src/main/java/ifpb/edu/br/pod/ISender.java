@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
  */
 public interface ISender extends Remote {
 
-    void sendMessage(Message message) throws RemoteException;
+    void sendMessage(Client client, Channel channel, Message message) throws RemoteException;
 
-    MessageResult getMessage(String id) throws RemoteException;
+    boolean getNotification(Notification notification) throws RemoteException;
 }

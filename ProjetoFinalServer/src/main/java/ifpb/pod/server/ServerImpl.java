@@ -3,7 +3,10 @@ package ifpb.pod.server;
 import ifpb.edu.br.pod.*;
 
 import java.math.BigInteger;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -18,9 +21,9 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
     private List<Client> clientObservers;
     private ChannelRepository channelRepository;
 
-    ServerImpl() throws RemoteException {
-        clientObservers = new LinkedList<>();
-        channelRepository = new ChannelRepository();
+    public ServerImpl(List<Client> clients, ChannelRepository channelRepository) throws RemoteException {
+        this.clientObservers = clients;
+        this.channelRepository = channelRepository;
     }
 
     @Override
@@ -69,22 +72,18 @@ public class ServerImpl extends UnicastRemoteObject implements IServer {
     }
 
     @Override
-    public MessageResult processMessageReceive(Message msg) throws RemoteException {
-        //
-        MessageDigest msd;
+    public void processMessageReceive(Client client, Channel channel, Message msg) throws RemoteException {
+        System.out.println("Server recebeu a mensagem do cliente: " + client.getName());
+        System.out.println("Mensagem para o canal: " + channel.getName());
+        System.out.println("Mensagem recebida: " + msg.getText());
+        System.out.println();
+
+        Registry registry = LocateRegistry.getRegistry(1093);
         try {
-            msd = MessageDigest.getInstance("MD5");
-        } catch (NoSuchAlgorithmException e) {
-            throw new RemoteException("Erro de MD5", e);
+            IAppData appData = (IAppData) registry.lookup("AppData");
+            appData.receiveMessageAndCreateNotification(new MessageSended(client, channel, msg));
+        } catch (NotBoundException e) {
+            e.printStackTrace();
         }
-        //
-        byte[] bhash = msd.digest(msg.getText().getBytes());
-        BigInteger bi = new BigInteger(bhash);
-        //
-        MessageResult result = new MessageResult(msg.getId(), bi.toString(16));
-        //
-        System.out.println(msg.getId() + " " + msg.getText());
-        //
-        return result;
     }
 }

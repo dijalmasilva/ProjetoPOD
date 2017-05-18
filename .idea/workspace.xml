@@ -2,30 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ad966bb-dd49-44d0-be44-ae0f3448103e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/TaskManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageResultRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/SendedMessageRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/MainReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/Receiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ResponseMessageRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Observer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Subject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Main.java" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/TaskManager.java" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ChannelRepository.java" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ChannelRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Main.java" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ServerImpl.java" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/MainAppData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/appdata/AppDataImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxCoord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxOperation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/SearchMessages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/ClientNotifiedRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/MessageRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/NotificationRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/SendedMessageRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ShowNotificationTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ReceiverImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/repositories/NotificationRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/NotificationTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/SendNotificationsTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/TaskManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IAppData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageSended.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Notification.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/TaskManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageResultRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/SendedMessageRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/MainReceiver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/Receiver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ResponseMessageRepository.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainChatClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/Main.java" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/MainServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java" afterPath="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java" afterPath="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java" afterPath="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,9 +56,84 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ProjetoFinalPod" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainChatClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainChatClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="64" column="107" lean-forward="false" selection-start-line="64" selection-start-column="107" selection-end-line="64" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/MainServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowNotificationTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ShowNotificationTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchMessages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/SearchMessages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="41" column="64" lean-forward="true" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IAppData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IAppData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppDataImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/appdata/AppDataImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,53 +154,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/pom.xml" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/pom.xml" />
-        <option value="$PROJECT_DIR$/ProjetoFinalAppData/pom.xml" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/Message.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/IClientObserver.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServiceObserver.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/TaskClient.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/RegisterImpl.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Client.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IRegister.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Channel.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/RegisterTask.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IClientObserver.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Client.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Channel.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Main.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ChannelRepository.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageResult.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Main.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/TaskManager.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/ServerImpl.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/ResponseMessageRepository.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Observer.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Subject.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Receiver.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ResponseMessageRepository.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MessageResultRepository.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageResultRepository.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageRepository.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/SendedMessageRepository.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java" />
         <option value="/usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/TaskManager.java" />
-        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java" />
         <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/MainReceiver.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainPrincipal.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/repositories/MessageRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/repositories/SendedMessageRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/repositories/MessageSended.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/MainChatClient.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Main.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/MainSender.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/MessageRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/SendedMessageRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ReceiverImpl.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxCoord.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/MainAppData.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxOperation.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageSended.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Notification.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/NotificationRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/ClientNotifiedRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetNotificationTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/repositories/NotificationRepository.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IAppData.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/TaskManager.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/MainServer.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/SendNotificationsTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/NotificationTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainChatClient.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ShowNotificationTask.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/SearchMessages.java" />
+        <option value="$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/appdata/AppDataImpl.java" />
       </list>
     </option>
   </component>
@@ -130,6 +225,7 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="132" />
     <option name="width" value="1366" />
     <option name="height" value="768" />
   </component>
@@ -286,6 +382,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -299,14 +397,366 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalChatClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalChatClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalChatClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalChatClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalChatClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalAppData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalAppData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalAppData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalAppData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalPod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetoFinalAppData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -315,15 +765,15 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ifpb.pod.sender" />
-      <recent name="ifpb.pod" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ifpb.edu.br.pod" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ifpb.pod.sender" />
+      <recent name="ifpb.pod" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,15 +788,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MainAppData">
+    <configuration default="false" name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ifpb.pod.receiver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ifpb.pod.chatclient.Main" />
+      <option name="MAIN_CLASS_NAME" value="ifpb.pod.MainServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ProjetoFinalServer" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ifpb.pod.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ifpb.pod.sender.MainSender" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -359,14 +829,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MainReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ifpb.pod.receiver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ifpb.pod.server.Main" />
+      <option name="MAIN_CLASS_NAME" value="ifpb.pod.receiver.MainReceiver" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -376,6 +846,46 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="ProjetoFinalServer" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ifpb.pod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ifpb.pod.MainChatClient" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ProjetoFinalChatClient" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainAppData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ifpb.pod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ifpb.pod.MainAppData" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ProjetoFinalAppData" />
       <envs />
       <method />
     </configuration>
@@ -789,16 +1299,21 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="3">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.Clean and Install" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MainServer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainSender" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MainReceiver" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MainChatClient" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MainAppData" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.MainChatClient" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MainAppData" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MainSender" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MainReceiver" />
       </list>
     </recent_temporary>
   </component>
@@ -821,28 +1336,41 @@
       <workItem from="1494848544949" duration="3306000" />
       <workItem from="1494873083121" duration="1651000" />
       <workItem from="1494874773945" duration="9337000" />
-      <workItem from="1494927479958" duration="4298000" />
+      <workItem from="1494927479958" duration="4382000" />
+      <workItem from="1494944535484" duration="1425000" />
+      <workItem from="1494959915699" duration="5686000" />
+      <workItem from="1495042359610" duration="20529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29604000" />
+    <option name="totallyTimeSpent" value="57328000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="132" width="1366" height="768" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -852,9 +1380,33 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -869,217 +1421,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Client.java" />
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Client.java" />
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/Channel.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="28">
-            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/Client.java" />
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,128 +1447,222 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ResponseMessageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/SendedMessageRepository.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="306" column="12" lean-forward="false" selection-start-line="306" selection-start-column="12" selection-end-line="306" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/Receiver.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/TaskManager.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainPrincipal.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageResultRepository.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/MainReceiver.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/MessageSended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ResponseMessageRepository.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/SendedMessageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="144">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/MessageResultRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ChannelRepository.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Channel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="84">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/Main.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxCoord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/MessageSended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/interfaces/TxOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/NotificationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/repositories/NotificationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/ReceiverImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/repositories/ClientNotifiedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ChannelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/TaskManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/ServerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        <state relative-caret-position="482">
+          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/Main.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/MessageResultRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/repositories/SendedMessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ObserverImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="431">
+          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1225,69 +1671,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SenderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/SendTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="306" column="12" lean-forward="false" selection-start-line="306" selection-start-column="12" selection-end-line="306" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="33" column="70" lean-forward="true" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/GetResultTask.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/ISender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/MainAppData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/SendNotificationsTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="41" column="54" lean-forward="false" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/TaskManager.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/server/NotificationTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="216">
+          <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/MainSender.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/MainServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        <state relative-caret-position="156">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/MainChatClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="64" column="107" lean-forward="false" selection-start-line="64" selection-start-column="107" selection-end-line="64" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/TaskManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="34" column="88" lean-forward="false" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/sender/ShowNotificationTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalShared/src/main/java/ifpb/edu/br/pod/IAppData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalChatClient/src/main/java/ifpb/pod/chatclient/SearchMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="41" column="64" lean-forward="true" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetoFinalServer/src/main/java/ifpb/pod/receiver/MainReceiver.java">
+    <entry file="file://$PROJECT_DIR$/ProjetoFinalAppData/src/main/java/ifpb/pod/appdata/AppDataImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="603">
+          <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,12 +1835,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ProjetoFinalChatClient</last-edited>
+          <last-edited>ProjetoFinalShared</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

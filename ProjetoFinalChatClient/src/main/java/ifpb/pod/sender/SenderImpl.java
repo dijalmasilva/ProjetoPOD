@@ -1,10 +1,8 @@
 package ifpb.pod.sender;
 
-import ifpb.edu.br.pod.ISender;
-import ifpb.edu.br.pod.Message;
-import ifpb.edu.br.pod.MessageResult;
-import ifpb.pod.sender.repositories.MessageRepository;
-import ifpb.pod.sender.repositories.MessageResultRepository;
+import ifpb.edu.br.pod.*;
+import ifpb.pod.repositories.MessageRepository;
+import ifpb.pod.repositories.NotificationRepository;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -14,25 +12,29 @@ import java.rmi.server.UnicastRemoteObject;
  */
 public class SenderImpl extends UnicastRemoteObject implements ISender {
 
-    private final MessageRepository repository;
-    private final MessageResultRepository resultRepository;
+    private final MessageRepository messageRepository;
+    private final NotificationRepository notificationRepository;
 
-    public SenderImpl(MessageRepository rep, MessageResultRepository resultRep) throws RemoteException {
-        this.repository = rep;
-        this.resultRepository = resultRep;
+    public SenderImpl(MessageRepository messageRepository, NotificationRepository notificationRepository) throws RemoteException {
+        this.messageRepository = messageRepository;
+        this.notificationRepository = notificationRepository;
     }
 
     @Override
-    public void sendMessage(Message dto) throws RemoteException {
-        //armazenar temporariamente a mensagem
-        repository.add(dto);
+    public void sendMessage(Client client, Channel channel, Message message) throws RemoteException {
+        MessageSended messageSended = new MessageSended(client, channel, message);
+        messageRepository.addMessage(messageSended);
+        System.out.println("Mensagem recebida pelo Sender");
     }
 
     @Override
-    public MessageResult getMessage(String id) throws RemoteException {
-        //recuperar a mensagem no repositório
-        MessageResult result = resultRepository.get(id);
-        if (result != null) resultRepository.remove(result);
-        return result;
+    public boolean getNotification(Notification notification) throws RemoteException {
+        try {
+            System.out.println("SenderImpl recebeu notificação: " + notification.getToken());
+            this.notificationRepository.addNotification(notification);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

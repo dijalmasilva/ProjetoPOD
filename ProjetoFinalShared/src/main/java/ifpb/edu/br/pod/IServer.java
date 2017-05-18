@@ -17,5 +17,5 @@ public interface IServer extends Remote {
 
     List<Channel> listChannels() throws RemoteException;
 
-    MessageResult processMessageReceive(Message message) throws RemoteException;
+    void processMessageReceive(Client client, Channel channel, Message message) throws RemoteException;
 }

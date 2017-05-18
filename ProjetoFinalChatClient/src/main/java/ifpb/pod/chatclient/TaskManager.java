@@ -3,12 +3,19 @@ package ifpb.pod.chatclient;
 import ifpb.edu.br.pod.Channel;
 import ifpb.edu.br.pod.Client;
 import ifpb.edu.br.pod.IServer;
+import ifpb.pod.repositories.ClientNotifiedRepository;
+import ifpb.pod.repositories.MessageRepository;
+import ifpb.pod.repositories.NotificationRepository;
+import ifpb.pod.repositories.SendedMessageRepository;
+import ifpb.pod.sender.SenderTask;
+import ifpb.pod.sender.ShowNotificationTask;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.List;
+import java.util.Timer;
 
 /**
  * Created by <a href="http://dijalmasilva.github.io" target="_blank">dijalma</a> on 13/05/17.
@@ -17,12 +24,18 @@ public class TaskManager {
 
     private IServer server;
 
-    TaskManager() throws RemoteException, NotBoundException {
+    public TaskManager(MessageRepository messageRepository, SendedMessageRepository sendedMessageRepository,
+                       NotificationRepository notificationRepository, ClientNotifiedRepository clientNotifiedRepository,
+                       List<Client> clients) throws RemoteException, NotBoundException {
         Registry registry = LocateRegistry.getRegistry(1099);
         server = (IServer) registry.lookup("Server");
+        Timer timer = new Timer();
+        timer.schedule(new SenderTask(messageRepository, sendedMessageRepository), 2000, 2000);
+        timer.schedule(new ShowNotificationTask(notificationRepository, clientNotifiedRepository, clients), 5000, 5000);
+        timer.schedule(new SearchMessages(clientNotifiedRepository, clients), 3000, 3000);
     }
 
-    boolean registerClient(Client clientObserver) {
+    public boolean registerClient(Client clientObserver) {
 
         try {
             if (clientObserver != null) {
@@ -47,8 +60,10 @@ public class TaskManager {
         return false;
     }
 
-    public void listChannels() throws RemoteException {
-        printChannels(server.listChannels());
+    public List<Channel> listChannels() throws RemoteException {
+        List<Channel> channels = server.listChannels();
+        printChannels(channels);
+        return channels;
     }
 
     public void registerInChannel(Client client, int id) throws RemoteException {
